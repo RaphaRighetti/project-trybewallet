@@ -64,7 +64,7 @@
 @media ( max-width : 435px ) {
 
   .tableContainer table {
-    padding: 2px;
+    padding: 8px;
   }
 
   .tableContainer table tr td {
@@ -77,5 +77,19 @@
 
   .tableContainer {
     font-size: 5px;
+  }
+
+  .tableBtns {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tableBtns svg {
+    width: fit-content;
+  }
+
+  .editIcon {
+    padding-bottom: 2px;
   }
 }
