@@ -79,17 +79,17 @@
     font-size: 5px;
   }
 
-  .tableBtns {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-
   .tableBtns svg {
-    width: fit-content;
+    width: 20px;
   }
 
   .editIcon {
+    margin: 0;
     padding-bottom: 2px;
   }
+
+  .trashIcon {
+    margin: 0;
+  }
+
 }
