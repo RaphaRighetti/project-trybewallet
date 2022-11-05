@@ -29,7 +29,7 @@ class LoginForm extends Component {
     const { email } = this.state;
     const { dispatch, history } = this.props;
     dispatch(loginAct(email));
-    history.push('/carteira');
+    history.push('/project-trybewallet/carteira');
   };
 
   render() {
