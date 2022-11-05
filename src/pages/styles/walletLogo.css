@@ -1,0 +1,65 @@
+/* only animate if the device supports hover */
+
+@media ( hover : hover ) {
+
+  .creditcard {
+    transform: translateY(110px);
+    transition: transform 0.1s ease-in-out;
+  }
+
+  .money {
+
+    /*  set start position */
+    transform: translateY(180px);
+    transition: transform 0.1s ease-in-out;
+
+    /*  set transition for mouse enter & exit */
+  }
+
+  .walletBox:hover .creditcard {
+    transform: translateY(0);
+    transition: transform 0.2s ease-in-out;
+
+    /*  overide transition for mouse enter */
+  }
+
+  .walletBox:hover .money {
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+
+    /*  overide transition for mouse enter */
+  }
+}
+
+@keyframes bounce {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-0.25rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* styling */
+svg {
+  overflow: visible;
+  width: 50px;
+}
+
+.walletBox:hover svg {
+  transform: translateY(-0.25rem);
+  transition: transform 0.2s ease-in-out;
+}
+
+.walletBox {
+  border: none;
+  color: white;
+  outline: none;
+  position: relative;
+}

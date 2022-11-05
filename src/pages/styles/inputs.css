@@ -1,0 +1,142 @@
+.input-focus {
+  box-sizing: border-box;
+  margin: 5px;
+  max-width: 250px;
+  position: relative;
+  width: 90%;
+}
+
+.focus-border {
+  border-radius: 7px;
+}
+
+.input-focus input {
+  margin: 7px 0;
+}
+
+.input-focus label input {
+  margin: 7px 0;
+}
+
+.effect-5 {
+  border: none;
+  border-bottom-color: #ccc;
+  box-shadow: 0 1px 0  #ccc;
+  box-sizing: border-box;
+  color: rgb(37, 37, 37);
+  font-family: Montserrat , sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 5px 0 7px;
+  position: relative;
+  transition: 0.4s;
+  width: 100%;
+  z-index: 2;
+}
+
+
+.effect-5:focus {
+  box-shadow: none;
+  outline: none;
+  padding: 5px 14px 7px;
+  transform: scale(95%);
+  transition: 0.4s;
+}
+
+.effect-5 ~ .focus-border {
+  bottom: 0;
+  height: 36px;
+  left: 0;
+  position: absolute;
+  transition: 0.4s;
+  width: 0;
+}
+
+.effect-6 ~ .focus-border {
+  bottom: 0;
+  height: 36px;
+  left: 0;
+  position: absolute;
+  transition: 0.4s;
+  width: 0;
+}
+
+.effect-5:focus ~ .focus-border {
+  border: 2px solid var(--primary);
+  transition: 0.4s;
+  width: 98%;
+  z-index: 1;
+}
+
+.effect-5-error:focus ~ .focus-border {
+  border: 2px solid #e00b0b;
+}
+
+.effect-6 {
+  background-color: rgb(238, 238, 238);
+  border: none;
+  border-bottom-color: rgb(180, 180, 180);
+  box-shadow: 0 1px 0  rgb(180, 180, 180);
+  box-sizing: border-box;
+  color: rgb(37, 37, 37);
+  font-family: Montserrat , sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 5px 0 7px;
+  position: relative;
+  transition: 0.4s;
+  width: 100%;
+  z-index: 2;
+}
+
+
+.effect-6:focus {
+  box-shadow: none;
+  outline: none;
+  padding: 5px 14px 7px;
+  transform: scale(95%);
+  transition: 0.4s;
+}
+
+.effect-6:focus ~ .focus-border {
+  border: 2px solid var(--primary);
+  transition: 0.4s;
+  width: 98%;
+  z-index: 1;
+}
+
+.input-focus label {
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tag-input {
+  background-color: rgb(238, 238, 238);
+  border: 0;
+  box-shadow: 0 1px 0  rgb(180, 180, 180);
+  color: rgb(37, 37, 37);
+  font-family: Montserrat , sans-serif;
+  font-weight: 600;
+  margin-top: 5px;
+  padding: 5px 5px 5px 0;
+}
+
+.tag-input:focus {
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  box-shadow: none;
+  outline: none;
+}
+
+.max-width-100 {
+  max-width: 100px;
+}
+
+.max-width-235 {
+  max-width: 235px;
+}
+
+.height-56 {
+  height: 56px;
+}

@@ -1,0 +1,81 @@
+.tableContainer {
+  color: white;
+  display: flex;
+  font-size: clamp(6px, 1.3vw, 14px);
+  font-weight: 400;
+  justify-content: center;
+  text-align: center;
+}
+
+.tableContainer table {
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.tableContainer table tr td {
+  padding: 10px 5px;
+}
+
+.tableContainer table tr .tableBtns {
+  padding: 10px 0;
+}
+
+.tableContainer table tr th {
+  padding: 10px 5px;
+}
+
+.trashIcon {
+  background-color: transparent;
+  border: none;
+  color: #e00b0b;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  padding: 0;
+  width: fit-content;
+}
+
+.editIcon {
+  background-color: transparent;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  padding: 0;
+  width: fit-content;
+}
+
+@media ( max-width : 500px ) {
+
+  .tableContainer table {
+    padding: 10px;
+  }
+
+  .tableContainer table tr td {
+    padding: 10px 0;
+  }
+
+  .tableContainer table tr th {
+    padding: 10px 5px;
+  }
+}
+
+@media ( max-width : 435px ) {
+
+  .tableContainer table {
+    padding: 2px;
+  }
+
+  .tableContainer table tr td {
+    padding: 10px 0;
+  }
+
+  .tableContainer table tr th {
+    padding: 10px 2px;
+  }
+
+  .tableContainer {
+    font-size: 5px;
+  }
+}
