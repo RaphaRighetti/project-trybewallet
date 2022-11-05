@@ -2,6 +2,7 @@
   "name": "sd-0x-project-trybewallet",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://rapharighetti.github.io/project-trybewallet/",
   "engines": {
     "node": "16"
   },
